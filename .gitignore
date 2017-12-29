@@ -1,0 +1,5 @@
+.sass-cache/
+node_modules/
+sass/
+guide.txt
+css/styles.css.map

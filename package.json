@@ -1,0 +1,18 @@
+{
+  "name": "SassProyect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --output-style compressed -o css sass/styles.scss",
+    "autoprefixer": "gulp prefixer",
+    "build-css": "npm run build && npm run autoprefixer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-autoprefixer": "^4.0.0",
+    "node-sass": "^4.7.2"
+  }
+}

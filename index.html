@@ -4,10 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Sass Proyect</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
+  <link href="https://file.myfontastic.com/qZwnQ2BAmiwkU9n3AzwKUR/icons.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+
 </head>
-<body>
-  
+<body class="login-page">
+
+  <!-- main -->
+  <main>
+    <div class="main-home">
+
+      <img src="img/logo.png" alt="logo" class="logo">
+      <form class="login-form">
+        <div class="login-form__item">
+          <label for="username" class="login-form__label icon-user">Nombre de Usuario</label>
+          <input type="text" class="login-form__input" name="username" id="username">
+        </div>
+        <div class="login-form__item">
+          <label for="password" class="login-form__label icon-password">Contraseña</label>
+          <input type="password" class="login-form__input" name="password" id="username">
+        </div>
+        <a href="cursos.html" class="login-form__submit">
+          <input type="button" value="Ingresar" class="login-form__submit-item button cta">
+        </a>
+      </form>
+      <div class="reset-password">
+        <h3>¿Ha olvidado su contraseña?<a href="#">Recuperar</a></h3>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

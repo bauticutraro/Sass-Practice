@@ -10,21 +10,112 @@
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
-<body class="cursos-page">
+<body class="course-page">
 
   <!-- Header -->
-  <header>
-
+  <header class="main-header">
+    <div class="icon-bars navToggle" id="icon-bars"></div>
+    <h2>Mis cursos</h2>
   </header>
 
   <!-- nav -->
-  <nav>
+  <nav class="main-nav" id="main-nav">
+    <header class="main-nav__header">
+      <div class="main-nav__user">
+        <div class="main-nav__user__img"><img src="img/user.png" alt=""></div>
+        <div class="main-nav__user__data">
+          <div class="main-nav__user__name">Bautista Cutraro</div>
+          <div class="main-nav__user__bio">Alumno de EDteam</div>
+        </div>
+      </div>
+      <div class="icon-cross cross navToggle"></div>
+    </header>
 
+    <ul class="main-menu">
+      <li class="main-menu__item">
+        <a href="#" class="icon-user main-menu__link">Mi Perfil</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="icon-book main-menu__link">Mis Cursos</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="icon-comments main-menu__link">Mis Preguntas</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="icon-users main-menu__link">Comunidad</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="icon-log-out main-menu__link">Cerrar Sesión</a>
+      </li>
+    </ul>
   </nav>
 
   <!-- main -->
-  <main>
+  <main class="main-container">
+    <div class="course-card">
+      <img src="img/sass-course.png" alt="" class="course-card__img">
+      <a href="#" class="icon-star"></a>
+      <footer class="course-card__footer">
+        <div class="course-card__progress">
+          <div class="course-card__progress__bar"></div>
+          <div class="course-card__progress__label">56% completado</div>
+        </div>
+        <div class="course-card__professor">Álvaro Felipe</div>
+      </footer>
+    </div>
 
+    <div class="course-card">
+      <img src="img/java-course.png" alt="" class="course-card__img">
+      <a href="#" class="icon-star"></a>
+      <footer class="course-card__footer">
+        <div class="course-card__progress">
+          <div class="course-card__progress__bar"></div>
+          <div class="course-card__progress__label">56% completado</div>
+        </div>
+        <div class="course-card__professor">Alexys Lozada</div>
+      </footer>
+    </div>
+
+    <div class="course-card">
+      <img src="img/vue-course.png" alt="" class="course-card__img">
+      <a href="#" class="icon-star"></a>
+      <footer class="course-card__footer">
+        <div class="course-card__progress">
+          <div class="course-card__progress__bar"></div>
+          <div class="course-card__progress__label">56% completado</div>
+        </div>
+        <div class="course-card__professor">Jon Mircha</div>
+      </footer>
+    </div>
+
+      <div class="course-card">
+        <img src="img/js-course.png" alt="" class="course-card__img">
+        <a href="#" class="icon-star"></a>
+        <footer class="course-card__footer">
+          <div class="course-card__progress">
+            <div class="course-card__progress__bar"></div>
+            <div class="course-card__progress__label">56% completado</div>
+          </div>
+          <div class="course-card__professor">Jon Mircha</div>
+        </footer>
+      </div>
+
+      <div class="course-card">
+        <img src="img/css-course.png" alt="" class="course-card__img">
+        <a href="#" class="icon-star"></a>
+        <footer class="course-card__footer">
+          <div class="course-card__progress">
+            <div class="course-card__progress__bar"></div>
+            <div class="course-card__progress__label">56% completado</div>
+          </div>
+          <div class="course-card__professor">Álvaro Felipe</div>
+        </footer>
+      </div>
   </main>
+
+
+  <div class="" id="modalBackdrop"></div>
+
+<script src="script.js"></script>
 </body>
 </html>

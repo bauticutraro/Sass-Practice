@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sass Proyect</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
+  <link href="https://file.myfontastic.com/qZwnQ2BAmiwkU9n3AzwKUR/icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="course-page">
+
+  <!-- header -->
+  <header class="main-header">
+    <div class="icon-bars navToggle" id="icon-bars"></div>
+    <h2>Mis cursos</h2>
+  </header>
+
+  <!-- nav -->
+  <nav class="main-nav" id="main-nav">
+    <header class="main-nav__header">
+      <div class="main-nav__user">
+        <div class="main-nav__user__img"><img src="img/user.png" alt=""></div>
+        <div class="main-nav__user__data">
+          <div class="main-nav__user__name">Bautista Cutraro</div>
+          <div class="main-nav__user__bio">Alumno de EDteam</div>
+        </div>
+      </div>
+      <div class="icon-cross cross navToggle"></div>
+    </header>
+
+    <ul class="main-menu">
+      <li class="main-menu__item">
+        <a href="#" class="icon-user main-menu__link">Mi Perfil</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="cursos.html" class="icon-book main-menu__link">Mis Cursos</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="icon-comments main-menu__link">Mis Preguntas</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="icon-users main-menu__link">Comunidad</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="index.html" class="icon-log-out main-menu__link">Cerrar Sesión</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- main -->
+  <main>
+    <!-- header -->
+    <header class="course-header">
+      <img src="img/sass-course.png" alt="">
+      <div class="course-header__teacher">
+        <img src="img/alvaro.jpg" class="course-header__teacher__img"></img>
+        <div class="course-header__teacher__data">
+          <div class="course-header__teacher__name">
+            Álvaro Felipe <small>Profesor</small>
+          </div>
+          <a href="" class="course-header__teacher__ask button cta">Solicitar Asesoría</a>
+        </div>
+      </div>
+    </header>
+    <!-- contenido -->
+    <div class="content">
+      <h1 class="content-title">Contenido del Curso</h1>
+      <div class="curse-content">
+        <div class="icon-play course-content__item">01 Introducción a Sass</div>
+        <div class="icon-play course-content__item">02 Sintaxis de Sass</div>
+        <div class="icon-play course-content__item">03 Sintaxis de Sass II</div>
+        <div class="icon-play course-content__item">04 Mixins</div>
+        <div class="icon-play course-content__item">05 Funciones</div>
+        <div class="icon-play course-content__item">06 Iteraciones y condicionales</div>
+        <div class="icon-play course-content__item">07 Funciones avanzadas</div>
+        <div class="icon-play course-content__item">08 Color</div>
+        <div class="icon-play course-content__item">09 Debugging</div>
+        <div class="icon-play course-content__item">10 Librerías y frameworks</div>
+        <div class="icon-play course-content__item">11 Proyecto Final -Parte I</div>
+        <div class="icon-play course-content__item">12 Proyecto Final - Parte II</div>
+      </div>
+    </div>
+  </main>
+
+  <div class="" id="modalBackdrop"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

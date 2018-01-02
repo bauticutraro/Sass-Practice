@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#003b5f" />
+  <title>Sass Proyect</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
+  <link href="https://file.myfontastic.com/qZwnQ2BAmiwkU9n3AzwKUR/icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="courses-page">
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="icon-bars navToggle" id="icon-bars"></div>
+    <h2>Mis preguntas</h2>
+  </header>
+
+  <!-- nav -->
+  <nav class="main-nav" id="main-nav">
+    <header class="main-nav__header">
+      <div class="main-nav__user">
+        <div class="main-nav__user__img"><img src="img/user.png" alt=""></div>
+        <div class="main-nav__user__data">
+          <div class="main-nav__user__name">Bautista Cutraro</div>
+          <div class="main-nav__user__bio">Alumno de EDteam</div>
+        </div>
+      </div>
+      <div class="icon-cross cross navToggle"></div>
+    </header>
+
+    <ul class="main-menu">
+      <li class="main-menu__item">
+        <a href="perfil.html" class="icon-user main-menu__link">Mi Perfil</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="cursos.html" class="icon-book main-menu__link">Mis Cursos</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="preguntas.html" class="icon-comments main-menu__link">Mis Preguntas</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="icon-users main-menu__link">Comunidad</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="icon-log-out main-menu__link" id="close">Cerrar Sesión</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- main -->
+  <main class="main-container">
+    <div class="card-question">
+      <p class="card-question__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aliquam neque accusamus asperiores provident esse minima repudiandae tempora sit, sint doloremque quibusdam, aliquid qui veniam non laboriosam labore est possimus.</p>
+      <div class="card-question__course"><i class="icon-folder"></i>Sass desde cero</div>
+      <footer class="card-question__footer">
+        <div class="card-question__footer-answer">3 respuestas</div>
+        <div class="card-question__footer-like"><i class="icon-like"></i>15</div>
+        <div class="card-question__footer-date"><i class="icon-calendar"></i>12 dic - 15:31</div>
+      </footer>
+    </div>
+
+    <div class="answers">
+      <h2 class="answers__title">Respuestas:</h2>
+      <!-- respuesta 1 -->
+      <div class="answer">
+        <div class="answer-content">
+          <div class="answer__image">
+            <img src="img/persona1.jpg" class="answer__image-img" alt="">
+          </div>
+          <div class="answer__text">
+            <h3 class="answer__text-name">Jon Doe</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam magni recusandae harum fugiat quibusdam neque praesentium, illo minima dicta voluptatum eum nulla error sint quia hic dignissimos dolorum libero ipsa?</p>
+          </div>
+        </div>
+        <footer class="answer-footer">
+          <div class="answer-footer__answer">1 respuesta</div>
+          <div class="answer-footer__like"><i class="icon-like"></i>15</div>
+          <div class="answer-footer__date"><i class="icon-calendar"></i>12 dic - 15:31</div>
+        </footer>
+        <!-- respuesta 2 -->
+        <div class="answer">
+          <div class="answer-content">
+            <div class="answer__image">
+              <img src="img/persona5.jpg" class="answer__image-img" alt="">
+            </div>
+            <div class="answer__text">
+              <h3 class="answer__text-name">Jon Doe</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam magni recusandae harum fugiat quibusdam neque praesentium, illo minima dicta voluptatum eum nulla error sint quia hic dignissimos dolorum libero ipsa?</p>
+            </div>
+          </div>
+          <footer class="answer-footer">
+            <div class="answer-footer__answer">0 respuestas</div>
+            <div class="answer-footer__like"><i class="icon-like"></i>15</div>
+            <div class="answer-footer__date"><i class="icon-calendar"></i>12 dic - 15:31</div>
+          </footer>
+        </div>
+        <!-- respuesta 3 -->
+        <div class="answer w100">
+          <div class="answer-content">
+            <div class="answer__image">
+              <img src="img/persona3.jpg" class="answer__image-img" alt="">
+            </div>
+            <div class="answer__text">
+              <h3 class="answer__text-name">Jon Doe</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam magni recusandae harum fugiat quibusdam neque praesentium, illo minima dicta voluptatum eum nulla error sint quia hic dignissimos dolorum libero ipsa?</p>
+            </div>
+          </div>
+          <footer class="answer-footer">
+            <div class="answer-footer__answer">0 respuestas</div>
+            <div class="answer-footer__like"><i class="icon-like"></i>15</div>
+            <div class="answer-footer__date"><i class="icon-calendar"></i>12 dic - 15:31</div>
+          </footer>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+
+  <div class="" id="modalBackdrop"></div>
+  <div class="modal-content" id="modalContent">
+    <div class="modal" id="modal">
+      <h2 class="modal__title">Advertencia</h2>
+      <p class="modal__text">¿Seguro que quieres cerrar sesión en EDteam?</p>
+      <div class="modal__buttons">
+        <a href="#" class="modal__button" id="cancel">No</a>
+        <a href="index.html" class="modal__button">Sí</a>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

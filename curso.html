@@ -16,7 +16,7 @@
   <!-- header -->
   <header class="main-header">
     <div class="icon-bars navToggle" id="icon-bars"></div>
-    <h2>Mis cursos</h2>
+    <h2>Sass desde cero</h2>
   </header>
 
   <!-- nav -->
@@ -34,19 +34,19 @@
 
     <ul class="main-menu">
       <li class="main-menu__item">
-        <a href="#" class="icon-user main-menu__link">Mi Perfil</a>
+        <a href="perfil.html" class="icon-user main-menu__link">Mi Perfil</a>
       </li>
       <li class="main-menu__item">
         <a href="cursos.html" class="icon-book main-menu__link">Mis Cursos</a>
       </li>
       <li class="main-menu__item">
-        <a href="#" class="icon-comments main-menu__link">Mis Preguntas</a>
+        <a href="preguntas.html" class="icon-comments main-menu__link">Mis Preguntas</a>
       </li>
       <li class="main-menu__item">
         <a href="#" class="icon-users main-menu__link">Comunidad</a>
       </li>
       <li class="main-menu__item">
-        <a href="index.html" class="icon-log-out main-menu__link">Cerrar Sesión</a>
+        <a href="#" class="icon-log-out main-menu__link" id="close">Cerrar Sesión</a>
       </li>
     </ul>
   </nav>
@@ -87,6 +87,16 @@
   </main>
 
   <div class="" id="modalBackdrop"></div>
+  <div class="modal-content" id="modalContent">
+    <div class="modal" id="modal">
+      <h2 class="modal__title">Advertencia</h2>
+      <p class="modal__text">¿Seguro que quieres cerrar sesión en EDteam?</p>
+      <div class="modal__buttons">
+        <a href="#" class="modal__button" id="cancel">No</a>
+        <a href="index.html" class="modal__button">Sí</a>
+      </div>
+    </div>
+  </div>
 
 <script src="script.js"></script>
 </body>

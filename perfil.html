@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#003b5f" />
+  <title>Sass Proyect</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400" rel="stylesheet">
+  <link href="https://file.myfontastic.com/qZwnQ2BAmiwkU9n3AzwKUR/icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="courses-page">
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="icon-bars navToggle" id="icon-bars"></div>
+    <h2>Mi perfil</h2>
+  </header>
+
+  <!-- nav -->
+  <nav class="main-nav" id="main-nav">
+    <header class="main-nav__header">
+      <div class="main-nav__user">
+        <div class="main-nav__user__img"><img src="img/user.png" alt=""></div>
+        <div class="main-nav__user__data">
+          <div class="main-nav__user__name">Bautista Cutraro</div>
+          <div class="main-nav__user__bio">Alumno de EDteam</div>
+        </div>
+      </div>
+      <div class="icon-cross cross navToggle"></div>
+    </header>
+
+    <ul class="main-menu">
+      <li class="main-menu__item">
+        <a href="perfil.html" class="icon-user main-menu__link">Mi Perfil</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="cursos.html" class="icon-book main-menu__link">Mis Cursos</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="preguntas.html" class="icon-comments main-menu__link">Mis Preguntas</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="icon-users main-menu__link">Comunidad</a>
+      </li>
+      <li class="main-menu__item">
+        <a href="#" class="icon-log-out main-menu__link" id="close">Cerrar Sesión</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- main -->
+  <main class="main-container">
+    <div class="profile">
+      <div class="profile-user">
+        <div class="profile-user__image">
+          <img src="img/user.jpg" class="profile-user__image-img" alt="">
+        </div>
+        <div class="profile-user__name">
+          <h1>Bautista Cutraro</h1>
+          <h3>Alumno de EDteam</h3>
+        </div>
+        <div class="profile-user__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, cumque nihil est nulla, exercitationem voluptates magnam fugiat ipsum aspernatur ex aliquam libero? Eveniet consequatur veritatis possimus vel, illo ut suscipit.</p>
+        </div>
+        <button type="text" class="profile-user__button">Contactar</button>
+      </div>
+    </div>
+
+    <!-- caracteristicas -->
+    <nav class="nav-features">
+      <ul class="nav-features__list">
+        <li class="nav-features__list-item active" id="abilities">Mis Habilidades <div class="line line-active" id="line1"></div> </li>
+        <li class="nav-features__list-item" id="course">Mis Cursos <div class="line" id="line2"></div> </li>
+        <li class="nav-features__list-item" id="contributions">Mis Aportes <div class="line" id="line3"></div> </li>
+      </ul>
+    </nav>
+    <div class="abilities active features" id="abilities-content">
+      <div class="features-content">
+        <h2>Mis habilidades</h2>
+        <ul>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="course features" id="course-content">
+      <div class="features-content">
+        <h2>Mis cursos</h2>
+        <ul>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="contributions features" id="contributions-content">
+      <div class="features-content">
+        <h2>Mis aportes</h2>
+        <ul>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+
+
+  <div class="" id="modalBackdrop"></div>
+  <div class="modal-content" id="modalContent">
+    <div class="modal" id="modal">
+      <h2 class="modal__title">Advertencia</h2>
+      <p class="modal__text">¿Seguro que quieres cerrar sesión en EDteam?</p>
+      <div class="modal__buttons">
+        <a href="#" class="modal__button" id="cancel">No</a>
+        <a href="index.html" class="modal__button">Sí</a>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

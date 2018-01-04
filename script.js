@@ -1,5 +1,6 @@
 const nav = document.querySelector('#main-nav');
 const backdrop = document.querySelector('#modalBackdrop');
+
 const modalContent = document.querySelector('#modalContent');
 const modal = document.querySelector('#modal');
 const close = document.querySelector('#close');
@@ -16,6 +17,12 @@ const line2 = document.querySelector('#line2');
 const line3 = document.querySelector('#line3');
 
 
+// modal community
+const community = document.querySelector('#community');
+const modalContent2 = document.querySelector('#modalContent2');
+const modal2 = document.querySelector('#modal2');
+const closeModal = document.querySelector('#closeModal');
+
 let toggleNavClass = () => {
   nav.classList.toggle('show')
   // Add background Color
@@ -23,6 +30,43 @@ let toggleNavClass = () => {
 };
 // Click Handler
 Array.from(document.querySelectorAll('.navToggle')).map(el => el.addEventListener('click', toggleNavClass))
+
+
+// modal 1
+community.addEventListener('click', () => {
+  modalContent2.classList.add('show2');
+  modal2.classList.add('show3');
+  nav.classList.remove('show');
+  backdrop.classList.remove('modalBackdrop')
+
+});
+
+closeModal.addEventListener('click', () => {
+  modal2.classList.add('show4');
+  setTimeout(() => {
+    modalContent2.classList.remove('show2');
+    modal2.classList.remove('show3');
+    modal2.classList.remove('show4');
+  }, 300);
+
+})
+
+// modal 2
+// community.addEventListener('click', () => {
+//   modalCommunity.classList.add('show2');
+//   communityContent.classList.add('show3');
+//   nav.classList.remove('show');
+//   backdrop.classList.remove('modalBackdrop')
+//
+// });
+//
+// closeModal.addEventListener('click', () => {
+//   modalCommunity.classList.add('show2');
+//   communityContent.classList.add('show3');
+//   nav.classList.remove('show');
+//   backdrop.classList.remove('modalBackdrop')
+//
+// });
 
 
 close.addEventListener('click', () => {
@@ -44,6 +88,9 @@ cancel.addEventListener('click', () => {
 })
 
 
+community.addEventListener('click', () => {
+
+})
 
 // features
 abilities.addEventListener('click', () => {
